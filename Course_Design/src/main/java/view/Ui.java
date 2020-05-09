@@ -11,14 +11,15 @@ import java.awt.*;
  * @date 2020/5/916:59
  */
 public class Ui {
-    public JFrame frame = new JFrame("拯救学委2.0");
-    public JTextField text1 = new JTextField();
-    public JTextField text2 = new JTextField();
-    public JLabel label1 = new JLabel("目标文件夹:");
-    public JLabel label2 = new JLabel("关键字:");
-    public JScrollPane scrollPane_1 = new JScrollPane();
-    public JTextArea area = new JTextArea(10, 40);
-    public JButton button = new JButton("开始执行");
+    private JFrame frame = new JFrame("拯救学委2.0");
+    private JTextField text1 = new JTextField();
+    private JTextField text2 = new JTextField();
+    private JLabel label1 = new JLabel("目标文件夹:");
+    private JLabel label2 = new JLabel("关键字:");
+    private JScrollPane scrollPane_1 = new JScrollPane();
+    private static JTextArea area = new JTextArea(10, 40);
+    private JButton button = new JButton("开始执行");
+
     public Ui() {
         // 设置窗口位于屏幕中间
         int sWidth = Toolkit.getDefaultToolkit().getScreenSize().width;
@@ -62,6 +63,14 @@ public class Ui {
         frame.add(button);
 
         frame.setVisible(true);
+    }
+
+    public static void setArea(String text) {
+        area.append(text + '\n');
+    }
+
+    public static void setArea(int n) {
+        area.append("成功移动文件： " + n + " 个\n");
     }
 
     public static void main(String[] args) {
