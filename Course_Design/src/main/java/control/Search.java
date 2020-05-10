@@ -63,7 +63,7 @@ public class Search extends Thread {
             list.addFirst(dir);
             int length = 0;
             File temp;
-            while (!list.isEmpty()) {  // DFS
+            while (!list.isEmpty()) {  // BFS
                 length = list.size();
                 for (int i = 0; i < length; i++) {
                     temp = list.pollFirst();  // 出队
