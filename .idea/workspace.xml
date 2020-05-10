@@ -31,16 +31,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d35f2fe3-bb2a-4173-9e31-6dd807b7338d" name="Default Changelist" comment="SSC 2.0 VIEW and CONTROL Separation End">
-      <change afterPath="$PROJECT_DIR$/Course_Design/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Course_Design_jar/Course_Design.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Course_Design/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Course_Design/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Course_Design/src/main/java/control/Move_Files.java" beforeDir="false" afterPath="$PROJECT_DIR$/Course_Design/src/main/java/control/Move_Files.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Course_Design/target/classes/MainApplication/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Course_Design/target/classes/control/Un_Rar.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Course_Design/target/classes/control/Un_Zip.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Course_Design/target/classes/control/move_Files.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Course_Design/target/classes/view/Ui$ActionHandle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Course_Design/target/classes/view/Ui.class" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Course_Design/src/main/java/control/Search.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Course_Design/src/main/java/view/Ui.java" beforeDir="false" afterPath="$PROJECT_DIR$/Course_Design/src/main/java/view/Ui.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +72,7 @@
       <recent name="D:\Data_Architecture_Course_Design\Course_Design\src\main\java\control" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="Application.Ui">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainApplication.App" />
       <module name="Course_Design" />
@@ -96,6 +88,19 @@
     </configuration>
     <configuration name="Move_Files" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="control.Move_Files" />
+      <module name="Course_Design" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="control.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Search" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="control.Search" />
       <module name="Course_Design" />
       <extension name="coverage">
         <pattern>
@@ -135,8 +140,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App" />
         <item itemvalue="Application.Ui" />
+        <item itemvalue="Application.Search" />
+        <item itemvalue="Application.App" />
         <item itemvalue="Application.Un_Zip" />
         <item itemvalue="Application.Move_Files" />
       </list>
@@ -224,10 +230,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Add Browsing Function" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="395" y="90" key="#Inspections" timestamp="1589018470862">
+    <state x="395" y="90" key="#Inspections" timestamp="1589127385612">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="395" y="90" key="#Inspections/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1589018470862" />
+    <state x="395" y="90" key="#Inspections/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1589127385612" />
     <state x="249" y="0" key="#Project_Structure" timestamp="1589041394438">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -240,10 +246,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="397" y="202" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1589105653361" />
-    <state x="367" y="0" key="CommitChangelistDialog2" timestamp="1589106837699">
+    <state x="367" y="0" key="CommitChangelistDialog2" timestamp="1589127270493">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="367" y="0" key="CommitChangelistDialog2/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1589106837699" />
+    <state x="367" y="0" key="CommitChangelistDialog2/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1589127270493" />
     <state x="153" y="64" key="DiffContextDialog" timestamp="1589106814728">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -252,38 +258,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="343" y="153" key="FileChooserDialogImpl/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1589104397356" />
-    <state width="1493" height="237" key="GridCell.Tab.0.bottom" timestamp="1589106838456">
+    <state width="1493" height="341" key="GridCell.Tab.0.bottom" timestamp="1589131360479">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="237" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1589106838456" />
-    <state width="1493" height="237" key="GridCell.Tab.0.center" timestamp="1589106838456">
+    <state width="1493" height="341" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1589131360479" />
+    <state width="1493" height="341" key="GridCell.Tab.0.center" timestamp="1589131360479">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="237" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1589106838456" />
-    <state width="1493" height="237" key="GridCell.Tab.0.left" timestamp="1589106838456">
+    <state width="1493" height="341" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1589131360479" />
+    <state width="1493" height="341" key="GridCell.Tab.0.left" timestamp="1589131360479">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="237" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1589106838456" />
-    <state width="1493" height="237" key="GridCell.Tab.0.right" timestamp="1589106838456">
+    <state width="1493" height="341" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1589131360479" />
+    <state width="1493" height="341" key="GridCell.Tab.0.right" timestamp="1589131360479">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="237" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1589106838456" />
-    <state width="1493" height="32" key="GridCell.Tab.1.bottom" timestamp="1589100373893">
+    <state width="1493" height="341" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1589131360479" />
+    <state width="1493" height="341" key="GridCell.Tab.1.bottom" timestamp="1589131360479">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="32" key="GridCell.Tab.1.bottom/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1589100373893" />
-    <state width="1493" height="32" key="GridCell.Tab.1.center" timestamp="1589100373893">
+    <state width="1493" height="341" key="GridCell.Tab.1.bottom/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1589131360479" />
+    <state width="1493" height="341" key="GridCell.Tab.1.center" timestamp="1589131360479">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="32" key="GridCell.Tab.1.center/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1589100373893" />
-    <state width="1493" height="32" key="GridCell.Tab.1.left" timestamp="1589100373893">
+    <state width="1493" height="341" key="GridCell.Tab.1.center/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1589131360479" />
+    <state width="1493" height="341" key="GridCell.Tab.1.left" timestamp="1589131360479">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="32" key="GridCell.Tab.1.left/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1589100373893" />
-    <state width="1493" height="32" key="GridCell.Tab.1.right" timestamp="1589100373893">
+    <state width="1493" height="341" key="GridCell.Tab.1.left/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1589131360479" />
+    <state width="1493" height="341" key="GridCell.Tab.1.right" timestamp="1589131360479">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="32" key="GridCell.Tab.1.right/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1589100373893" />
+    <state width="1493" height="341" key="GridCell.Tab.1.right/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1589131360479" />
     <state x="147" y="0" key="SettingsEditor" timestamp="1589105657734">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

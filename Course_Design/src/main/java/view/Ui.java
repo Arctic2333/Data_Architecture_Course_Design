@@ -1,6 +1,7 @@
 package view;
 
 import control.Move_Files;
+import control.Search;
 import control.Un_Zip;
 
 import javax.swing.*;
@@ -78,6 +79,9 @@ public class Ui {
         area.setBounds(0, 50, 175, 230);
         area.setText("帮助\n\n移动文件：\n请输入关键字和文件夹（可使用\n浏览功能）\n\n解压：\n请直接点击解压选择文件夹将解\n压文件夹下所有zip与rar压缩包\n\n" +
                 "搜索文件：\n请输入关键字点击搜索");
+        area.setLineWrap(true);        //激活自动换行功能
+        area.setWrapStyleWord(true);            // 激活断行不断字功能
+        area.setEditable(false);  // 不允许直接编辑
         scrollPane_1.setViewportView(area);  // 向文件域中添加滚动条
 
 
@@ -92,7 +96,7 @@ public class Ui {
         btn_unZip.setBounds(midX + 130, midY, btn_move_start.getWidth(), btn_move_start.getHeight());
         frame.add(btn_unZip);
 
-        btn_serch.setBounds(midX+60,midY+40,btn_move_start.getWidth(),btn_move_start.getHeight());
+        btn_serch.setBounds(midX + 60, midY + 40, btn_move_start.getWidth(), btn_move_start.getHeight());
         frame.add(btn_serch);
 
         frame.setVisible(true);
@@ -110,13 +114,14 @@ public class Ui {
         public void actionPerformed(ActionEvent e) {
             if (e.getSource() == btn_move_start) {  // move功能开始执行
                 try {
+                    area.setText("");
                     Move_Files.move_Files(text1.getText(), text2.getText());  // 将两个文本框中内容当作参数传入
-                    JOptionPane.showMessageDialog(frame, "移动完成");
+                    JOptionPane.showMessageDialog(frame, "移动完成");  // 弹出消息框
                     System.out.println("GUI.out:移动成功");  // 终端测试可观，与control层输出区分开
                 } catch (IOException ioException) {
-                    ioException.printStackTrace();
                     JOptionPane.showMessageDialog(frame, "移动失败");
                     System.out.println("GUI.out:移动失败");  // 终端测试可观，与control层输出区分开
+                    ioException.printStackTrace();
                 }
             }
             if (e.getSource() == btn_browse) {  // 选择文件夹
@@ -133,9 +138,19 @@ public class Ui {
                     JOptionPane.showMessageDialog(frame, "解压完成");
                     System.out.println("GUI.out:Zip解压成功");  // 终端测试可观，与control层输出区分开
                 } catch (IOException ioException) {
-                    ioException.printStackTrace();
                     JOptionPane.showMessageDialog(frame, "解压失败");
                     System.out.println("GUI.out:Zip解压失败");  // 终端测试可观，与control层输出区分开
+                    ioException.printStackTrace();
+                }
+            }
+            if (e.getSource() == btn_serch) {
+                try {
+                    area.setText("");
+                    Search.search(text2.getText());
+                    JOptionPane.showMessageDialog(frame, "搜索成功");
+                } catch (IOException ioException) {
+                    JOptionPane.showMessageDialog(frame, "搜索失败");
+                    ioException.printStackTrace();
                 }
             }
         }
