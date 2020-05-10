@@ -17,7 +17,7 @@ public class Move_Files {
     @SuppressWarnings("all")
     /**
      * @Description: 指定到指定目录和移动文件名中带有关键字的文件
-     * @Param: [str1, str2]
+     * @Param: [str1, str2]  str1：目标文件夹  str2：文件名关键字
      * @return: void
      * @Date: 2020/5/9
      */
@@ -39,7 +39,7 @@ public class Move_Files {
         Ui.setArea(total);  // 输出移动成功的文件数
         System.out.println("*********************移动成功**********************");  // 终端测试可观
         System.out.println("成功移动：" + total + "个");  // 终端测试可观
-        System.out.println("当前工作路径："+System.getProperty("user.dir"));  // 终端测试可观 当前路径
+        System.out.println("当前工作路径：" + System.getProperty("user.dir"));  // 终端测试可观 当前路径
         return;
     }
 
