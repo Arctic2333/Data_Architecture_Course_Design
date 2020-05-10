@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Course_Design:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Course_Design_jar</output-path>
+    <root id="archive" name="Course_Design.jar">
+      <element id="module-output" name="Course_Design" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/ant/ant/1.6.5/ant-1.6.5.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/github/junrar/junrar/1.0.1/junrar-1.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/commons/commons-vfs2/2.2/commons-vfs2-2.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.2/commons-logging-1.2.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

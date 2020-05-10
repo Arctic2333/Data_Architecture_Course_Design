@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Course_Design:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -26,27 +31,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d35f2fe3-bb2a-4173-9e31-6dd807b7338d" name="Default Changelist" comment="SSC 2.0 VIEW and CONTROL Separation End">
-      <change afterPath="$PROJECT_DIR$/test/test - 副本 (2).zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test - 副本 (3).zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test - 副本 (4).zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test - 副本 (5).zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test - 副本.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Course_Design/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/Course_Design_jar/Course_Design.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Course_Design/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Course_Design/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Course_Design/src/main/java/control/Move_Files.java" beforeDir="false" afterPath="$PROJECT_DIR$/Course_Design/src/main/java/control/Move_Files.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Course_Design/src/main/java/control/Un_Zip.java" beforeDir="false" afterPath="$PROJECT_DIR$/Course_Design/src/main/java/control/Un_Zip.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Course_Design/src/main/java/view/Ui.java" beforeDir="false" afterPath="$PROJECT_DIR$/Course_Design/src/main/java/view/Ui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Course_Design/target/classes/MainApplication/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/Course_Design/target/classes/MainApplication/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Course_Design/target/classes/control/Un_Zip.class" beforeDir="false" afterPath="$PROJECT_DIR$/Course_Design/target/classes/control/Un_Zip.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Course_Design/target/classes/control/move_Files.class" beforeDir="false" afterPath="$PROJECT_DIR$/Course_Design/target/classes/control/move_Files.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Course_Design/target/classes/view/Ui$ActionHandle.class" beforeDir="false" afterPath="$PROJECT_DIR$/Course_Design/target/classes/view/Ui$ActionHandle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Course_Design/target/classes/view/Ui.class" beforeDir="false" afterPath="$PROJECT_DIR$/Course_Design/target/classes/view/Ui.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/测试/test - 副本 (2).txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/测试/test - 副本 (3).txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/测试/test - 副本 (4).txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/测试/test - 副本 (5).txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/测试/test - 副本.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/测试/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Course_Design/target/classes/MainApplication/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Course_Design/target/classes/control/Un_Rar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Course_Design/target/classes/control/Un_Zip.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Course_Design/target/classes/control/move_Files.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Course_Design/target/classes/view/Ui$ActionHandle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Course_Design/target/classes/view/Ui.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +70,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
@@ -86,7 +80,7 @@
       <recent name="D:\Data_Architecture_Course_Design\Course_Design\src\main\java\control" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Ui">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainApplication.App" />
       <module name="Course_Design" />
@@ -141,10 +135,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App" />
         <item itemvalue="Application.Ui" />
         <item itemvalue="Application.Un_Zip" />
         <item itemvalue="Application.Move_Files" />
-        <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
   </component>
@@ -242,26 +236,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="362" y="298" key="#com.intellij.codeInsight.template.impl.EditVariableDialog/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1589039748936" />
-    <state x="367" y="0" key="CommitChangelistDialog2" timestamp="1589094344652">
+    <state x="397" y="202" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1589105653361">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="367" y="0" key="CommitChangelistDialog2/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1589094344652" />
-    <state width="1493" height="76" key="GridCell.Tab.0.bottom" timestamp="1589102683585">
+    <state x="397" y="202" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1589105653361" />
+    <state x="367" y="0" key="CommitChangelistDialog2" timestamp="1589106837699">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="76" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1589102683585" />
-    <state width="1493" height="76" key="GridCell.Tab.0.center" timestamp="1589102683584">
+    <state x="367" y="0" key="CommitChangelistDialog2/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1589106837699" />
+    <state x="153" y="64" key="DiffContextDialog" timestamp="1589106814728">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="76" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1589102683584" />
-    <state width="1493" height="76" key="GridCell.Tab.0.left" timestamp="1589102683584">
+    <state x="153" y="64" key="DiffContextDialog/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1589106814728" />
+    <state x="343" y="153" key="FileChooserDialogImpl" timestamp="1589104397356">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="76" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1589102683584" />
-    <state width="1493" height="76" key="GridCell.Tab.0.right" timestamp="1589102683585">
+    <state x="343" y="153" key="FileChooserDialogImpl/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1589104397356" />
+    <state width="1493" height="237" key="GridCell.Tab.0.bottom" timestamp="1589106838456">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="76" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1589102683585" />
+    <state width="1493" height="237" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1589106838456" />
+    <state width="1493" height="237" key="GridCell.Tab.0.center" timestamp="1589106838456">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="237" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1589106838456" />
+    <state width="1493" height="237" key="GridCell.Tab.0.left" timestamp="1589106838456">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="237" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1589106838456" />
+    <state width="1493" height="237" key="GridCell.Tab.0.right" timestamp="1589106838456">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="237" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1589106838456" />
     <state width="1493" height="32" key="GridCell.Tab.1.bottom" timestamp="1589100373893">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -278,10 +284,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="32" key="GridCell.Tab.1.right/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1589100373893" />
-    <state x="147" y="113" key="SettingsEditor" timestamp="1589039843894">
+    <state x="147" y="0" key="SettingsEditor" timestamp="1589105657734">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="147" y="113" key="SettingsEditor/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1589039843894" />
+    <state x="147" y="0" key="SettingsEditor/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1589105657734" />
     <state x="563" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589078129776">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
