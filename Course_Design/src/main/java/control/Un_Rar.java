@@ -18,7 +18,7 @@ import java.io.IOException;
 public class Un_Rar {
     public static void main(String[] args) {
         try {
-            System.out.println(unAllRar("E:\\giao"));
+            System.out.println(unAllRar("D:/Data_Architecture_Course_Design/test"));
         } catch (IOException | RarException e) {
             e.printStackTrace();
         }
@@ -52,9 +52,9 @@ public class Un_Rar {
      *
      * @param descDir 文件目录绝对路径
      * @param rarFile RAR文件
-     * @return 是否解压成功
+     * @return void
      */
-    public static boolean un_Rar(String descDir, File rarFile) throws IOException, RarException {
+    public static void un_Rar(String descDir, File rarFile) throws IOException, RarException {
         //创建解压后的文件夹
         File Directory = new File(descDir + File.separator + rarFile.getName().substring(0, rarFile.getName().lastIndexOf(".")));
         if (!Directory.exists()) {
@@ -90,6 +90,6 @@ public class Un_Rar {
                 fileOutputStream.close();
             }
         }
-        return true;
+        return ;
     }
 }

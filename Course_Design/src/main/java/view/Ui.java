@@ -1,7 +1,9 @@
 package view;
 
+import com.github.junrar.exception.RarException;
 import control.Move_Files;
 import control.Search;
+import control.Un_Rar;
 import control.Un_Zip;
 
 import javax.swing.*;
@@ -136,9 +138,10 @@ public class Ui {
                 text1.setText(chose_file.getName());
                 try {
                     Un_Zip.un_Zip(chose_file.getAbsolutePath());
+                    Un_Rar.unAllRar(chose_file.getAbsolutePath());
                     JOptionPane.showMessageDialog(frame, "解压完成");
                     System.out.println("GUI.out:Zip解压成功");  // 终端测试可观，与control层输出区分开
-                } catch (IOException ioException) {
+                } catch (IOException | RarException ioException) {
                     JOptionPane.showMessageDialog(frame, "解压失败");
                     System.out.println("GUI.out:Zip解压失败");  // 终端测试可观，与control层输出区分开
                     ioException.printStackTrace();
