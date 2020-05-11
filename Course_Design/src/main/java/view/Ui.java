@@ -51,6 +51,7 @@ public class Ui {
         frame.setBounds(winX + 50, winY + 50, 700, 400);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  // 退出、最小化、关闭
         frame.setLayout(null);  // 空白布局
+        frame.setResizable(false);
 
         int midX = 700 / 2 - 120 / 2;  // 窗口中间位置
         int midY = 400 / 2 - 30 / 2;
@@ -64,7 +65,7 @@ public class Ui {
         frame.add(text2);
 
 
-        label1.setBounds(midX - 100, midY - 35, 140, 30);
+        label1.setBounds(midX - 80, midY - 35, 140, 30);
         frame.add(label1);
 
 
@@ -77,8 +78,8 @@ public class Ui {
         frame.getContentPane().add(scrollPane_1);
 
         area.setBounds(0, 50, 175, 230);
-        area.setText("帮助\n\n移动文件：\n请输入关键字和文件夹（可使用\n浏览功能）\n\n解压：\n请直接点击解压选择文件夹将解\n压文件夹下所有zip与rar压缩包\n\n" +
-                "搜索文件：\n请输入关键字点击搜索");
+        area.setText("帮助\n\n移动文件：\n请输入关键字和文件夹（可使用浏览功能）后点击开始移动\n\n解压：\n请直接点击解压选择文件夹将解压文件夹下所有zip与rar压缩包\n\n" +
+                "搜索文件：\n请输入关键字点击搜索，搜索结果会逐步罗列在该区域中");
         area.setLineWrap(true);        //激活自动换行功能
         area.setWrapStyleWord(true);            // 激活断行不断字功能
         area.setEditable(false);  // 不允许直接编辑
@@ -145,9 +146,9 @@ public class Ui {
             }
             if (e.getSource() == btn_serch) {
                 try {
-                    area.setText("");
+                    area.setText("");  // 文件域置空
                     Search.search(text2.getText());
-                    JOptionPane.showMessageDialog(frame, "搜索成功");
+                    JOptionPane.showMessageDialog(frame, "已开始搜索");
                 } catch (IOException ioException) {
                     JOptionPane.showMessageDialog(frame, "搜索失败");
                     ioException.printStackTrace();
