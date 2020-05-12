@@ -26,3 +26,7 @@ target
 # git
 *.orig
 
+*.xml
+.idea/libraries/Maven__com_github_junrar_junrar_1_0_1.xml
+*.xml
+*.iml
