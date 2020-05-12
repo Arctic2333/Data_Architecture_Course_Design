@@ -65,37 +65,6 @@ public class Un_Rar {
             Directory.mkdirs();
         }
         Junrar.extract(rarFile, Directory);
-        /*
-        Archive archive = new Archive(rarFile);
-        //创建rar文件对象
-        FileHeader fileHeader;
-        //循环获得rar文件对象
-        while ((fileHeader = archive.nextFileHeader()) != null) {
-            //判断英文，还是中文，解决中文乱码
-            String filename = fileHeader.getFileNameW().isEmpty() ? fileHeader.getFileNameString() : fileHeader.getFileNameW();
-            if (fileHeader.isDirectory()) {
-                //在本地创建文件夹
-                File dir = new File(Directory.getAbsolutePath() + File.separator + filename);
-                if (!dir.exists()) {
-                    dir.mkdirs();
-                }
-            } else {
-                //创建文件
-                File out = new File(Directory.getAbsolutePath() + File.separator + filename);
-                //创建父级文件结构
-                if (!out.exists()) {
-                    if (!out.getParentFile().exists()) {
-                        out.getParentFile().mkdirs();
-                    }
-                    out.createNewFile();
-                }
-                //构建输出流，实现复制
-                FileOutputStream fileOutputStream = new FileOutputStream(out);
-                archive.extractFile(fileHeader, fileOutputStream);
-                //关闭流
-                fileOutputStream.close();
-            }
-        }*/
         return;
     }
 }
