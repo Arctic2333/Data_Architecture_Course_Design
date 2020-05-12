@@ -1,11 +1,9 @@
 package control;
 
-import com.github.junrar.Archive;
+import com.github.junrar.Junrar;
 import com.github.junrar.exception.RarException;
-import com.github.junrar.rarfile.FileHeader;
 
 import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
 
 /**
@@ -38,7 +36,11 @@ public class Un_Rar {
             assert files != null;
             for (File file : files) {
                 if (file.getAbsolutePath().toLowerCase().endsWith(".rar")) {
-                    un_Rar(descDir, file);
+                    try {
+                        un_Rar(descDir, file);
+                    } catch (IOException | RarException e) {
+                        e.printStackTrace();
+                    }
                 }
             }
         } else {
@@ -54,12 +56,16 @@ public class Un_Rar {
      * @param rarFile RAR文件
      * @return void
      */
+
+
     public static void un_Rar(String descDir, File rarFile) throws IOException, RarException {
         //创建解压后的文件夹
         File Directory = new File(descDir + File.separator + rarFile.getName().substring(0, rarFile.getName().lastIndexOf(".")));
         if (!Directory.exists()) {
             Directory.mkdirs();
         }
+        Junrar.extract(rarFile, Directory);
+        /*
         Archive archive = new Archive(rarFile);
         //创建rar文件对象
         FileHeader fileHeader;
@@ -89,7 +95,7 @@ public class Un_Rar {
                 //关闭流
                 fileOutputStream.close();
             }
-        }
-        return ;
+        }*/
+        return;
     }
 }

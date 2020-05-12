@@ -140,10 +140,8 @@ public class Ui {
                     Un_Zip.un_Zip(chose_file.getAbsolutePath());
                     Un_Rar.unAllRar(chose_file.getAbsolutePath());
                     JOptionPane.showMessageDialog(frame, "解压完成");
-                    System.out.println("GUI.out:Zip解压成功");  // 终端测试可观，与control层输出区分开
+                    System.out.println("GUI.out:Zip or Rar解压成功");  // 终端测试可观，与control层输出区分开
                 } catch (IOException | RarException ioException) {
-                    JOptionPane.showMessageDialog(frame, "解压失败");
-                    System.out.println("GUI.out:Zip解压失败");  // 终端测试可观，与control层输出区分开
                     ioException.printStackTrace();
                 }
             }
