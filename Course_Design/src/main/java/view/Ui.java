@@ -80,7 +80,7 @@ public class Ui {
         frame.getContentPane().add(scrollPane_1);
 
         area.setBounds(0, 50, 175, 230);
-        area.setText("帮助\n\n移动文件：\n请输入关键字和文件夹（可使用浏览功能）后点击开始移动\n\n解压：\n请直接点击解压选择文件夹将解压文件夹下所有zip与rar压缩包\n\n" +
+        area.setText("帮助\n\n移动文件：\n请输入关键字和文件夹（可使用浏览功能）后点击开始移动\n(只能移动软件存放的目录下的文件)\n\n解压：\n请直接点击解压选择文件夹将解压文件夹下所有zip与rar压缩包\n\n" +
                 "搜索文件：\n请输入关键字点击搜索，搜索结果会逐步罗列在该区域中");
         area.setLineWrap(true);        //激活自动换行功能
         area.setWrapStyleWord(true);            // 激活断行不断字功能

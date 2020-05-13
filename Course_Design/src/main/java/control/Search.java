@@ -51,7 +51,7 @@ public class Search extends Thread {
     }
 
     /**
-     * @Description: 在树形存储结构下DFS
+     * @Description: 在树形存储结构下BFS
      * @Param: [dir, key]
      * @return: void
      * @Date: 2020/5/10
