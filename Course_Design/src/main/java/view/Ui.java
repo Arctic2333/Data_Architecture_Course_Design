@@ -117,10 +117,14 @@ public class Ui {
         public void actionPerformed(ActionEvent e) {
             if (e.getSource() == btn_move_start) {  // move功能开始执行
                 try {
-                    area.setText("");
-                    Move_Files.move_Files(text1.getText(), text2.getText());  // 将两个文本框中内容当作参数传入
-                    JOptionPane.showMessageDialog(frame, "移动完成");  // 弹出消息框
-                    System.out.println("GUI.out:移动成功");  // 终端测试可观，与control层输出区分开
+                    if (text1.getText().equals(null) || text2.getText().equals(null) || text1.getText().equals("") || text2.getText().equals("")) {
+                        JOptionPane.showMessageDialog(frame, "请输入完整信息");  // 判断关键字或者目标文件夹是否为空
+                    } else {
+                        area.setText("");
+                        Move_Files.move_Files(text1.getText(), text2.getText());  // 将两个文本框中内容当作参数传入
+                        JOptionPane.showMessageDialog(frame, "移动完成");  // 弹出消息框
+                        System.out.println("GUI.out:移动成功");  // 终端测试可观，与control层输出区分开
+                    }
                 } catch (IOException ioException) {
                     JOptionPane.showMessageDialog(frame, "移动失败");
                     System.out.println("GUI.out:移动失败");  // 终端测试可观，与control层输出区分开
@@ -147,9 +151,13 @@ public class Ui {
             }
             if (e.getSource() == btn_serch) {
                 try {
-                    area.setText("");  // 文件域置空
-                    Search.search(text2.getText());
-                    JOptionPane.showMessageDialog(frame, "已开始搜索");
+                    if (text2.getText().equals(null) || text2.getText().equals("")) {
+                        JOptionPane.showMessageDialog(frame, "请输入完整信息");  // 判断关键是否为空
+                    } else {
+                        area.setText("");  // 文件域置空
+                        Search.search(text2.getText());
+                        JOptionPane.showMessageDialog(frame, "已开始搜索");
+                    }
                 } catch (IOException ioException) {
                     JOptionPane.showMessageDialog(frame, "搜索失败");
                     ioException.printStackTrace();
